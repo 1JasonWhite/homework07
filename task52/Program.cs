@@ -47,7 +47,7 @@ int[,] Arithmetic(int[,] matrix)
         {
             sum += matrix[i, j];
         }
-        double average = (double)sum / rows;
+        double average = (double)sum / rows; // не получается ограничить знаки после запятой, не знаю как вписать
         Console.WriteLine($"Среднеарифметическое колонки {j + 1}: {average}");
     }
     return matrix;
